@@ -5,6 +5,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '00dc6dd8-885d-42f6-9c17-2e88bab84360';
 
+//how to Find พร็อกซีไอพีs : https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md
 const พร็อกซีไอพีs = ['ni.radically.pro'];
 
 // if you want to use ipv6 or single พร็อกซีไอพี, please add comment at this line and remove comment at the next line
@@ -14,7 +15,7 @@ let พร็อกซีไอพี = พร็อกซีไอพีs[Math.
 // ipv6 พร็อกซีไอพี example remove comment to use
 // let พร็อกซีไอพี = "[2a01:4f8:c2c:123f:64:5:6810:c55a]"
 
-let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
+let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // OR use https://dns.adguard-dns.com/dns-query  OR  https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
 if (!isValidUUID(userID)) {
 	throw new Error('uuid is invalid');
