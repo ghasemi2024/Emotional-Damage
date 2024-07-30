@@ -79,7 +79,7 @@
 3.  بازدید کنید`https://edtunnel.pages.dev/sub/uuid your set/?format=clash`برای دریافت محتوای اشتراک با`uuid your set`مسیر و`clash`قالب محتوا با کد base64 باز خواهد گشت.
 
     توجه داشته باشید:`uuid your set`uuid است که در محیط UUID یا تنظیم کرده اید`wrangler.toml`,`_worker.js`فایل.
-    وقتی چند uuid را تنظیم می کنید، می توانید از آن استفاده کنید`https://edtunnel.pages.dev/sub/uuid1/?format=clash`برای دریافت محتوای اشتراک با`uuid1`مسیر و`clash` format.(only support first uuid in multiple uuid set)
+    وقتی چند uuid را تنظیم می کنید، می توانید از آن استفاده کنید`https://edtunnel.pages.dev/sub/uuid1/?format=clash`برای دریافت محتوای اشتراک با`uuid1`مسیر و`clash`قالب. (فقط از اولین uuid در مجموعه uuid چندگانه پشتیبانی می کند)
 
 ## مشترک شدن لینک bestip Cloudflare
 
