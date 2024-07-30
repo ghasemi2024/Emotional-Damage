@@ -18,7 +18,7 @@
 -   [تنظیمات UUID](#UUID-Setting)
     -   [مثال تنظیم UUID](#UUID-Setting-Example)
 -   [اشتراک vless لینک](#Subscribe-vless-link)
--   [اشتراک بهترین لینک Cloudflare](#Subscribe-Cloudflare-bestip-link)
+-   [مشترک شدن لینک bestip Cloudflare](#Subscribe-Cloudflare-bestip-link)
 -   [پشتیبانی از چند پورت](#Multiple-port-support)
 -   [آی پی پروکسی](#ProxyIP)![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
@@ -46,9 +46,9 @@
 
 1.  هنگام استقرار در صفحات cloudflare، می توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل. نام متغیر است`UUID`.`wrangler.toml`فایل نیز پشتیبانی می شود. (توصیه می شود) در صورت استقرار در صفحات وب، نمی توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل.
 
-2.  هنگام استقرار در worker.dev، می توانید uuid را در آن تنظیم کنید`_worker.js`فایل. نام متغیر است`userID`.`wrangler.toml`فایل نیز پشتیبانی می شود. (توصیه می شود) در صورت استقرار در صفحات وب، نمی توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل. در این حالت می توانید uuid را نیز تنظیم کنید`UUID`متغیر محیطی.
+2.  هنگام استقرار در worker.dev، می توانید uuid را در آن تنظیم کنید`_worker.js`فایل. نام متغیر است`userID`.`wrangler.toml`فایل نیز پشتیبانی می شود. (توصیه می شود) در صورت استقرار در صفحات وب، نمی توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل. در این مورد، می توانید uuid را نیز تنظیم کنید`UUID`متغیر محیطی.
 
-توجه داشته باشید:`UUID`uuid است که می خواهید تنظیم کنید. روش pages.dev و worker.dev همه آنها پشتیبانی می شود، اما به روش استقرار شما بستگی دارد.
+توجه داشته باشید:`UUID`uuid است که می خواهید تنظیم کنید. pages.dev و worker.dev همه روش‌ها پشتیبانی می‌شوند، اما به روش استقرار شما بستگی دارند.
 
 ### مثال تنظیم UUID
 
@@ -74,14 +74,14 @@
 2.  بازدید کنید`https://edtunnel.pages.dev/sub/uuid your set`برای دریافت محتوای اشتراک با`uuid your set`مسیر.
 
     توجه داشته باشید:`uuid your set`uuid است که در محیط UUID یا تنظیم کرده اید`wrangler.toml`,`_worker.js`فایل.
-    وقتی چند uuid را تنظیم می کنید، می توانید استفاده کنید`https://edtunnel.pages.dev/sub/uuid1`برای دریافت محتوای اشتراک با`uuid1`مسیر. (فقط از اولین uuid در مجموعه uuid چندگانه پشتیبانی می کند)
+    وقتی چند uuid را تنظیم می کنید، می توانید استفاده کنید`https://edtunnel.pages.dev/sub/uuid1`برای دریافت محتوای اشتراک با`uuid1`مسیر. (فقط اولین uuid در مجموعه uuid چندگانه پشتیبانی می شود)
 
 3.  بازدید کنید`https://edtunnel.pages.dev/sub/uuid your set/?format=clash`برای دریافت محتوای اشتراک با`uuid your set`مسیر و`clash`قالب محتوا با کد base64 باز خواهد گشت.
 
     توجه داشته باشید:`uuid your set`uuid است که در محیط UUID یا تنظیم کرده اید`wrangler.toml`,`_worker.js`فایل.
-    وقتی چند uuid را تنظیم می کنید، می توانید از آن استفاده کنید`https://edtunnel.pages.dev/sub/uuid1/?format=clash`برای دریافت محتوای اشتراک با`uuid1`مسیر و`clash`قالب. (فقط از اولین uuid در مجموعه uuid چندگانه پشتیبانی می کند)
+    وقتی چند uuid را تنظیم می کنید، می توانید از آن استفاده کنید`https://edtunnel.pages.dev/sub/uuid1/?format=clash`برای دریافت محتوای اشتراک با`uuid1`مسیر و`clash` format.(only support first uuid in multiple uuid set)
 
-## اشتراک بهترین لینک Cloudflare
+## مشترک شدن لینک bestip Cloudflare
 
 1.  بازدید کنید`https://edtunnel.pages.dev/bestip/uuid your set`برای دریافت اطلاعات اشتراک
 
@@ -114,7 +114,7 @@ https port: 443, 8443, 2053, 2096, 2087, 2083
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)نحوه پیدا کردن پروکسی[(منبع)](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)توجه داشته باشید:`proxyIP`آی پی یا دامنه ای است که می خواهید تنظیم کنید. این بدان معنی است که پروکسی IP برای هدایت ترافیک از طریق یک پروکسی به جای مستقیم به وب سایتی که از Cloudflare (CDN) استفاده می کند استفاده می شود. اگر این متغیر را تنظیم نکنید، اتصال به IP Cloudflare لغو (یا مسدود می شود)...
 
-دلایل: سوکت های خروجی TCP به محدوده IP Cloudflare به طور موقت مسدود شده اند، لطفاً به[اسناد tcp-sockets](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
+دلایل: سوکت های خروجی TCP به محدوده IP Cloudflare به طور موقت مسدود هستند، لطفاً به[اسناد tcp-sockets](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
 
 ## استفاده
 
