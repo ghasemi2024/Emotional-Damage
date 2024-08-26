@@ -156,7 +156,7 @@ let PT13 = '2096'
 
 ## ProxyIP
 
-1. When deploy in cloudflare pages, you can set proxyIP in `wrangler.toml` file. variable name is `PROXYIP`.
+1. When deploy in cloudflare pages, you can set proxyIP in `wrangler.toml` file or set in `_worker.js` file in the __line 13__.  Or i recommended to set in environment variable with name `PROXYIP` in your page/cloudflare account.
 
 2. When deploy in worker.dev, you can set proxyIP in `_worker.js` file. variable name is `proxyIP`.
 you can find proxyIP Here: https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md
