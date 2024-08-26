@@ -1084,6 +1084,16 @@ ${displayHtml}
 				</table>
 				<br>
 				<br>
+   					</thead>
+					<tbody>
+						<tr>
+							<td class="limited-width">${psb}</td>	
+							<td><button href="sing-box://import-remote-profile?url={'${psb}')" target='_blank'>import to Hiddify</button></td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<br>
         </div>
     </div>
 </div>
