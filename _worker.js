@@ -1,5 +1,9 @@
-// <!--GAMFC-->version base on commit 43fad05dcdae3b723c53c226f8181fc5bd47223e, time is 2023-06-22 15:20:02 UTC<!--GAMFC-END-->.
-// @ts-ignore
+/**
+* @ts-nocheck   <!--GAMFC-->version base on commit 43fad05dcdae3b723c53c226f8181fc5bd47223e, time is 2023-06-22 15:20:02 UTC<!--GAMFC-END-->.
+* Last Update: 4:20 UTC - Monday, 26 August 2024, By REvil
+* Many thanks to https://github.com/3Kmfi6HP/EDtunnel
+*/
+
 import { connect } from "cloudflare:sockets";
 
 // How to generate your own UUID:
