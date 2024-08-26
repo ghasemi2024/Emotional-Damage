@@ -855,7 +855,7 @@ ${displayHtml}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Cloudflare-workers/pages-vless proxy script V24.7.25</h1>
+            <h1>Cloudflare-workers/pages-vless proxy script v24.7.25</h1>
 	    <hr>
             <p>${noteshow}</p>
             <hr>
@@ -926,14 +926,14 @@ ${displayHtml}
 			<hr>
 			<br>	
 			<br>
-			<h3>3：The subscription links for general aggregation, Clash-meta and Sing-box are as follows：</h3>
+			<h3>3: The subscription links for general aggregation, v2rayNG, NekoBox, Hiddify, Singbox and Clash-Meta are as follows：</h3>
 			<hr>
 			<p>Note：<br>1、By default, each subscription link contains a total of 13 port nodes for TLS + non-TLS<br>2. The current worker domain name is used as a subscription link, and subscription updates need to be carried out through a proxy<br>3. If the client used does not support the sharding function, TLS Node is unavailable</p>
 			<hr>
 			<table class="table">
 					<thead>
 						<tr>
-							<th>Aggregate universal subscription links：</th>
+							<th>Aggregate universal v2ray sublink：</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -947,7 +947,7 @@ ${displayHtml}
 				<table class="table">
 						<thead>
 							<tr>
-								<th>Clash-meta Sublink：</th>
+								<th>Clash-Meta Sublink：</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -961,7 +961,7 @@ ${displayHtml}
 					<table class="table">
 					<thead>
 						<tr>
-							<th>Sing-box Sublink：</th>
+							<th>Hiddify & Singbox Sublink：</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -987,7 +987,7 @@ ${displayHtml}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Cloudflare-workers/pages-vless proxy script V24.7.25</h1>
+            <h1>Cloudflare-workers/pages-vless proxy script v24.7.25</h1>
 			<hr>
             <p>${noteshow}</p>
             <hr>
@@ -1027,14 +1027,14 @@ ${displayHtml}
 			<hr>
             <br>
             <br>
-			<h3>2：Aggregate general、Clash-meta、Sing-box Subscription link is as follows：</h3>
+			<h3>2：Aggregate general v2ray, Singbox and Clash Subscription links are as follows:</h3>
 			<hr>
 			<p>Note: The following subscription link only has 6 TLS port nodes</p>
 			<hr>
 			<table class="table">
 					<thead>
 						<tr>
-							<th>Aggregate universal subscription links：</th>
+							<th>Aggregate universal v2ray sublink：</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -1048,7 +1048,7 @@ ${displayHtml}
 				<table class="table">
 						<thead>
 							<tr>
-								<th>Clash-meta Sublink：</th>
+								<th>Clash-Meta Sublink：</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -1062,7 +1062,7 @@ ${displayHtml}
 					<table class="table">
 					<thead>
 						<tr>
-							<th>Sing-box Sublink：</th>
+							<th>Hiddify & Singbox Sublink：</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -1978,7 +1978,7 @@ proxies:
       Host: ${hostName}
 
 proxy-groups:
-- name: 负载均衡
+- name: load-balance
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -2006,8 +2006,9 @@ proxy-groups:
 - name: 🌍Choose an agent
   type: select
   proxies:
-    - 负载均衡
-    - 自动选择
+    - load balancing
+    - automatic selection
+
     - DIRECT
     - CF_V8_${IP8}_${PT8}
     - CF_V9_${IP9}_${PT9}
@@ -2019,7 +2020,8 @@ proxy-groups:
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理`
+  - MATCH,🌍Choose an agent
+`
 }
 		
 function getpsbConfig(userID, hostName) {
