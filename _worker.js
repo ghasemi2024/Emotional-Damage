@@ -973,16 +973,6 @@ ${displayHtml}
 				</table>
 				<br>
 				<br>
-   					</thead>
-					<tbody>
-						<tr>
-							<td class="limited-width">${sb}</td>	
-							<td><button href="sing-box://import-remote-profile?url={'${sb}')" target='_blank'>Import to Hiddify </button></td>
-						</tr>
-					</tbody>
-				</table>
-				<br>
-				<br>
         </div>
     </div>
 </div>
@@ -1079,16 +1069,6 @@ ${displayHtml}
 						<tr>
 							<td class="limited-width">${psb}</td>	
 							<td><button class="btn btn-primary" onclick="copyToClipboard('${psb}')">Click to copy link</button></td>
-						</tr>
-					</tbody>
-				</table>
-				<br>
-				<br>
-   					</thead>
-					<tbody>
-						<tr>
-							<td class="limited-width">${psb}</td>	
-							<td><button href="sing-box://import-remote-profile?url={'${psb}')" target='_blank'>import to Hiddify</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -1406,12 +1386,12 @@ return `{
 		"servers": [
 		  {
 			"tag": "proxydns",
-			"address": "tls://8.8.8.8/dns-query",
+			"address": "https://94.140.14.14/dns-query",
 			"detour": "select"
 		  },
 		  {
 			"tag": "localdns",
-			"address": "h3://223.5.5.5/dns-query",
+			"address": "tcp://185.228.168.9",
 			"detour": "direct"
 		  },
 		  {
@@ -2070,12 +2050,12 @@ return `{
 			"servers": [
 			  {
 				"tag": "proxydns",
-				"address": "tls://8.8.8.8/dns-query",
+				"address": "https://94.140.14.14/dns-query",
 				"detour": "select"
 			  },
 			  {
 				"tag": "localdns",
-				"address": "h3://223.5.5.5/dns-query",
+				"address": "tcp://185.228.168.9",
 				"detour": "direct"
 			  },
 			  {
