@@ -75,7 +75,7 @@
 
 -   بازدید کنید`https://edtunnel.pages.dev/uuid your set/psb`برای دریافت لینک اشتراک Hiddify/Singbox
 
--   بازدید کنید`https://edtunnel.pages.dev/uuid your set/pcl` to get the Clash-Meta subscription link.
+-   بازدید کنید`https://edtunnel.pages.dev/uuid your set/pcl`برای دریافت لینک اشتراک Clash-Meta.
 
 
 -   انجام شد. اگر سوالی دارید لطفا بپیوندید[@edtunnel](https://t.me/edtunnel)یا[@F_NiREvil](https://t.me/F_NiREvil)
@@ -109,7 +109,7 @@ let IP13 = 'www.wto.org'
 
 ## پشتیبانی از چند پورت
 
-برای مشاهده لیست پورت های پشتیبانی شده از Cloudflare، لطفاً به آدرس زیر مراجعه کنید[اسناد رسمی](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/ports).
+برای لیستی از پورت های پشتیبانی شده از Cloudflare، لطفاً به آدرس زیر مراجعه کنید[اسناد رسمی](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/ports).
 
 به طور پیش فرض، پورت 8080 و 8443 است. اگر می خواهید پورت ها را تغییر دهید، می توانید از پورت های زیر استفاده کنید:
 
@@ -141,12 +141,12 @@ let PT13 = '2096'
 
 ## پروکسی IP
 
-1.  هنگام استقرار در صفحات cloudflare، می توانید پروکسی IP را در آن تنظیم کنید`wrangler.toml`فایل نام متغیر است`PROXYIP`.
+1.  هنگام استقرار در صفحات cloudflare، می توانید پروکسی IP را در آن تنظیم کنید`wrangler.toml`فایل یا تنظیم کنید`_worker.js`فایل در**خط 13**.  یا من توصیه کردم متغیر محیطی را با نام تنظیم کنید`PROXYIP`در حساب صفحه/cloudflare شما.
 
 2.  هنگام استقرار در worker.dev، می توانید پروکسی IP را در آن تنظیم کنید`_worker.js`فایل نام متغیر است`proxyIP`.
-    می توانید پروکسی آی پی را در اینجا پیدا کنید:<https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md>
+    می توانید پروکسی IP را در اینجا پیدا کنید:<https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md>
 
-> [!احتیاط]`proxyIP`آی پی یا دامنه ای است که می خواهید تنظیم کنید. این بدان معنی است که پروکسی IP برای هدایت ترافیک از طریق یک پروکسی به جای مستقیم به وب سایتی که از Cloudflare (CDN) استفاده می کند، استفاده می شود. اگر این متغیر را تنظیم نکنید، اتصال به IP Cloudflare لغو (یا مسدود می شود)...
+> [!احتیاط]`proxyIP`آی پی یا دامنه ای است که می خواهید تنظیم کنید. این بدان معنی است که پروکسی IP برای هدایت ترافیک از طریق یک پروکسی به جای مستقیم به وب سایتی که از Cloudflare (CDN) استفاده می کند استفاده می شود. اگر این متغیر را تنظیم نکنید، اتصال به IP Cloudflare لغو (یا مسدود می شود)...
 
 دلایل: سوکت های خروجی TCP به محدوده IP Cloudflare به طور موقت مسدود شده اند، لطفاً به[اسناد tcp-sockets](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
 
@@ -156,4 +156,4 @@ let PT13 = '2096'
 
 ابتدا دامنه pages.dev خود را باز کنید`https://edtunnel.pages.dev/uuid your set`در مرورگر خود، به برای دریافت پیوندهای vless/singbox و clash config.
 
-![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)اعتبارات:[آن را استریل کنید](https://github.com/3Kmfi6HP/EDtunnel)&[zizifn](https://github.com/zizifn/edgetunnel)
+![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)اعتبارات:[استریل و نابود کنید](https://github.com/3Kmfi6HP/EDtunnel)&[zizifn](https://github.com/zizifn/edgetunnel)
