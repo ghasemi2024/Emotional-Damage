@@ -12,13 +12,13 @@ let userID = "264f2839-f838-4ba9-b71f-69e0b7e966c0";
 
 const proxyIPs = ["pip.nscl.ir"]; // OR use ['ni.radically.pro', 'de.radically.pro', 'bpb.yousef.isegaro.com', 'proxyip.digitalocean.hw.090227.xyz'];
 const cn_hostnames = [''];
-let CDNIP = 'sky.rethinkdns.com'
+let CDNIP = 'www.speedtest.net'
 // http_ip
 let IP1 = 'www.visa.com'
 let IP2 = 'cis.visa.com'
 let IP3 = 'africa.visa.com'
 let IP4 = 'www.visa.com.sg'
-let IP5 = 'www.visa.com.sg'
+let IP5 = 'sky.rethinkdns.com'
 let IP6 = 'go.inmobi.com'
 let IP7 = 'icook.hk'
 
@@ -26,7 +26,7 @@ let IP7 = 'icook.hk'
 let IP8 = 'usa.visa.com'
 let IP9 = 'www.speedtest.net'
 let IP10 = 'creativecommons.org'
-let IP11 = 'time.cloudflare.com'
+let IP11 = 'sky.rethinkdns.com'
 let IP12 = 'zula.ir'
 let IP13 = 'www.wto.org'
 
@@ -810,7 +810,7 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader, log) {
 function getVLESSConfig(userID, hostName) {
   const wvlessws = `vless://${userID}\u0040${CDNIP}:8880?encryption=none&security=none&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#${hostName}`;
   const pvlesswstls = `vless://${userID}\u0040${CDNIP}:8443?encryption=none&security=tls&type=ws&host=${hostName}&sni=${hostName}&fp=random&path=%2F%3Fed%3D2560#${hostName}`;
-  const note = `https://t.me/F_NiREvil \n\nProxyIP Running globally：${proxyIP}`;
+  const note = `https://t.me/F_NiREvil \n\nhttps://github.com/NiREvil/Emotional-Damage \n\nProxyIP Running globally：${proxyIP}`;
   const ty = `https://${hostName}/${userID}/ty`
   const cl = `https://${hostName}/${userID}/cl`
   const sb = `https://${hostName}/${userID}/sb`
@@ -968,6 +968,16 @@ ${displayHtml}
 						<tr>
 							<td class="limited-width">${sb}</td>	
 							<td><button class="btn btn-primary" onclick="copyToClipboard('${sb}')">Click to copy link</button></td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<br>
+   					</thead>
+					<tbody>
+						<tr>
+							<td class="limited-width">${sb}</td>	
+							<td><button href="sing-box://import-remote-profile?url={'${sb}')" target='_blank'>Import to Hiddify </button></td>
 						</tr>
 					</tbody>
 				</table>
