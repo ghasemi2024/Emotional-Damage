@@ -4,27 +4,27 @@ import { connect } from "cloudflare:sockets";
 
 // How to generate your own UUID:
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = "9db7e000-1490-4c9a-a844-484c68c46657";
+let userID = "264f2839-f838-4ba9-b71f-69e0b7e966c0";
 
-const proxyIPs = ["pip.nscl.ir"]; //ts.hpc.tw edgetunnel.anycast.eu.org bestproxy.onecf.eu.org cdn-all.xn--b6gac.eu.org cdn.xn--b6gac.eu.org proxy.xxxxxxxx.tk
+const proxyIPs = ["pip.nscl.ir"]; // OR use ['ni.radically.pro', 'de.radically.pro', 'bpb.yousef.isegaro.com', 'proxyip.digitalocean.hw.090227.xyz'];
 const cn_hostnames = [''];
-let CDNIP = 'www.visa.com.sg'
+let CDNIP = 'sky.rethinkdns.com'
 // http_ip
 let IP1 = 'www.visa.com'
 let IP2 = 'cis.visa.com'
 let IP3 = 'africa.visa.com'
 let IP4 = 'www.visa.com.sg'
-let IP5 = 'www.visaeurope.at'
-let IP6 = 'www.visa.com.mt'
-let IP7 = 'qa.visamiddleeast.com'
+let IP5 = 'www.visa.com.sg'
+let IP6 = 'go.inmobi.com'
+let IP7 = 'icook.hk'
 
 // https_ip
 let IP8 = 'usa.visa.com'
-let IP9 = 'myanmar.visa.com'
-let IP10 = 'www.visa.com.tw'
-let IP11 = 'www.visaeurope.ch'
-let IP12 = 'www.visa.com.br'
-let IP13 = 'www.visasoutheasteurope.com'
+let IP9 = 'www.speedtest.net'
+let IP10 = 'creativecommons.org'
+let IP11 = 'time.cloudflare.com'
+let IP12 = 'zula.ir'
+let IP13 = 'www.wto.org'
 
 // http_port
 let PT1 = '80'
@@ -806,7 +806,7 @@ async function handleUDPOutBound(webSocket, vlessResponseHeader, log) {
 function getVLESSConfig(userID, hostName) {
   const wvlessws = `vless://${userID}\u0040${CDNIP}:8880?encryption=none&security=none&type=ws&host=${hostName}&path=%2F%3Fed%3D2560#${hostName}`;
   const pvlesswstls = `vless://${userID}\u0040${CDNIP}:8443?encryption=none&security=tls&type=ws&host=${hostName}&sni=${hostName}&fp=random&path=%2F%3Fed%3D2560#${hostName}`;
-  const note = `甬哥博客地址：https://ygkkk.blogspot.com\n甬哥YouTube频道：https://www.youtube.com/@ygkkk\n甬哥TG电报群组：https://t.me/+jZHc6-A-1QQ5ZGVl\n甬哥TG电报频道：https://t.me/+DkC9ZZUgEFQzMTZl\n\nProxyIP全局运行中：${proxyIP}`;
+  const note = `https://t.me/F_NiREvil \n\nProxyIP Running globally：${proxyIP}`;
   const ty = `https://${hostName}/${userID}/ty`
   const cl = `https://${hostName}/${userID}/cl`
   const sb = `https://${hostName}/${userID}/sb`
@@ -838,7 +838,7 @@ function copyToClipboard(text) {
   input.select();
   document.execCommand('Copy');
   document.body.removeChild(input);
-  alert('已复制到剪贴板');
+  alert('Copied to clipboard');
 }
 </script>
 `;
@@ -851,7 +851,7 @@ ${displayHtml}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Cloudflare-workers/pages-vless代理脚本 V24.7.25</h1>
+            <h1>Cloudflare-workers/pages-vless proxy script V24.7.25</h1>
 	    <hr>
             <p>${noteshow}</p>
             <hr>
@@ -859,83 +859,83 @@ ${displayHtml}
 	    <hr>
             <br>
             <br>
-            <h3>1：CF-workers-vless+ws节点</h3>
+            <h3>1：CF-workers-vless+ws node</h3>
 			<table class="table">
 				<thead>
 					<tr>
-						<th>节点特色：</th>
-						<th>单节点链接如下：</th>
+						<th>node feature：</th>
+						<th>The single node link as follows follow：</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="limited-width">关闭了TLS加密，无视域名阻断</td>
+						<td class="limited-width">Turn off TLS encryption and ignore domain name blocking</td>
 						<td class="limited-width">${wvlessws}</td>
-						<td><button class="btn btn-primary" onclick="copyToClipboard('${wvlessws}')">点击复制链接</button></td>
+						<td><button class="btn btn-primary" onclick="copyToClipboard('${wvlessws}')">Click to copy link</button></td>
 					</tr>
 				</tbody>
 			</table>
-            <h5>客户端参数如下：</h5>
+            <h5>The client parameters are as follows：</h5>
             <ul>
-                <li>客户端地址(address)：自定义的域名 或者 优选域名 或者 优选IP 或者 反代IP</li>
-                <li>端口(port)：7个http端口可任意选择(80、8080、8880、2052、2082、2086、2095)，或反代IP对应端口</li>
-                <li>用户ID(uuid)：${userID}</li>
-                <li>传输协议(network)：ws 或者 websocket</li>
-                <li>伪装域名(host)：${hostName}</li>
-                <li>路径(path)：/?ed=2560</li>
-		<li>传输安全(TLS)：关闭</li>
+                <li>Client address：Custom domain name or preferred domain name or preferred IP or reverse IP</li>
+                <li>Port: 6个https ports can be selected arbitrarily: (443、8443、2053、2083、2087、2096)，Or reverse IP corresponding port<</li>>
+                <li>UserID(uuid)：${userID}</li>
+                <li>Transport protocol(network)：ws or websocket</li>
+                <li>Disguise domain name(host)：${hostName}</li>
+                <li>Path：/?ed=2560</li>
+		<li>Transport security(TLS)：turn on</li>
             </ul>
             <hr>
 			<hr>
 			<hr>
             <br>
             <br>
-            <h3>2：CF-workers-vless+ws+tls节点</h3>
+            <h3>2：CF-workers-vless+ws+tls node</h3>
 			<table class="table">
 				<thead>
 					<tr>
-						<th>节点特色：</th>
-						<th>单节点链接如下：</th>
+						<th>Node features：</th>
+						<th>The single node link is as follows：：</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="limited-width">启用了TLS加密，<br>如果客户端支持分片(Fragment)功能，建议开启，防止域名阻断</td>
+						<td class="limited-width">TLS encryption is enabled.<br>If the client supports the fragmentation function, it can be turned on to prevent domain name blocking.</td>
 						<td class="limited-width">${pvlesswstls}</td>	
-						<td><button class="btn btn-primary" onclick="copyToClipboard('${pvlesswstls}')">点击复制链接</button></td>
+						<td><button class="btn btn-primary" onclick="copyToClipboard('${pvlesswstls}')">Click to copy link</button></td>
 					</tr>
 				</tbody>
 			</table>
-            <h5>客户端参数如下：</h5>
+            <h5>The client parameters are as follows：</h5>
             <ul>
-                <li>客户端地址(address)：自定义的域名 或者 优选域名 或者 优选IP 或者 反代IP</li>
-                <li>端口(port)：6个https端口可任意选择(443、8443、2053、2083、2087、2096)，或反代IP对应端口</li>
-                <li>用户ID(uuid)：${userID}</li>
-                <li>传输协议(network)：ws 或者 websocket</li>
-                <li>伪装域名(host)：${hostName}</li>
-                <li>路径(path)：/?ed=2560</li>
-                <li>传输安全(TLS)：开启</li>
-                <li>跳过证书验证(allowlnsecure)：false</li>
+                <li>Client address：Custom domain name or preferred domain name or preferred IP or reverse IP</li>
+                <li>Port: 6个https ports can be selected arbitrarily: (443、8443、2053、2083、2087、2096)，Or reverse IP corresponding port<</li>
+                <li>userID(uuid)：${userID}</li>
+                <li>Transport protocol(network)：ws or websocket</li>
+                <li>Disguise domain name(host)：${hostName}</li>
+                <li>Path：/?ed=2560</li>
+                <li>Transport security(TLS)：turn on</li>
+                <li>Skip certificate verification(allowlnsecure)：false</li>
 			</ul>
 			<hr>
 			<hr>
 			<hr>
 			<br>	
 			<br>
-			<h3>3：聚合通用、Clash-meta、Sing-box订阅链接如下：</h3>
+			<h3>3：The subscription links for general aggregation, Clash-meta and Sing-box are as follows：</h3>
 			<hr>
-			<p>注意：<br>1、默认每个订阅链接包含TLS+非TLS共13个端口节点<br>2、当前workers域名作为订阅链接，需通过代理进行订阅更新<br>3、如使用的客户端不支持分片功能，则TLS节点不可用</p>
+			<p>Note：<br>1、By default, each subscription link contains a total of 13 port nodes for TLS + non-TLS<br>2. The current worker domain name is used as a subscription link, and subscription updates need to be carried out through a proxy<br>3. If the client used does not support the sharding function, TLS Node is unavailable</p>
 			<hr>
 			<table class="table">
 					<thead>
 						<tr>
-							<th>聚合通用订阅链接：</th>
+							<th>Aggregate universal subscription links：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="limited-width">${ty}</td>	
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${ty}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${ty}')">Click to copy link</button></td>
 						</tr>
 					</tbody>
 				</table>	
@@ -943,13 +943,13 @@ ${displayHtml}
 				<table class="table">
 						<thead>
 							<tr>
-								<th>Clash-meta订阅链接：</th>
+								<th>Clash-meta Sublink：</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="limited-width">${cl}</td>	
-								<td><button class="btn btn-primary" onclick="copyToClipboard('${cl}')">点击复制链接</button></td>
+								<td><button class="btn btn-primary" onclick="copyToClipboard('${cl}')">Click to copy link</button></td>
 							</tr>
 						</tbody>
 					</table>
@@ -957,13 +957,13 @@ ${displayHtml}
 					<table class="table">
 					<thead>
 						<tr>
-							<th>Sing-box订阅链接：</th>
+							<th>Sing-box Sublink：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="limited-width">${sb}</td>	
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${sb}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${sb}')">Click to copy link</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -983,7 +983,7 @@ ${displayHtml}
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Cloudflare-workers/pages-vless代理脚本 V24.7.25</h1>
+            <h1>Cloudflare-workers/pages-vless proxy script V24.7.25</h1>
 			<hr>
             <p>${noteshow}</p>
             <hr>
@@ -991,52 +991,52 @@ ${displayHtml}
 			<hr>
             <br>
             <br>
-            <h3>1：CF-pages/workers/自定义域-vless+ws+tls节点</h3>
+            <h3>1：CF-pages/workers/custom domain-vless+ws+tls node</h3>
 			<table class="table">
 				<thead>
 					<tr>
-						<th>节点特色：</th>
-						<th>单节点链接如下：</th>
+						<th>Node features：</th>
+						<th>The single node link is as follows：</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td class="limited-width">启用了TLS加密，<br>如果客户端支持分片(Fragment)功能，可开启，防止域名阻断</td>
+						<td class="limited-width">TLS encryption is enabled.<br>If the client supports the fragmentation function, it can be turned on to prevent domain name blocking.</td>
 						<td class="limited-width">${pvlesswstls}</td>
-						<td><button class="btn btn-primary" onclick="copyToClipboard('${pvlesswstls}')">点击复制链接</button></td>
+						<td><button class="btn btn-primary" onclick="copyToClipboard('${pvlesswstls}')">Click to copy link</button></td>
 					</tr>
 				</tbody>
 			</table>
-            <h5>客户端参数如下：</h5>
+            <h5>The client parameters are as follows：</h5>
             <ul>
-                <li>客户端地址(address)：自定义的域名 或者 优选域名 或者 优选IP 或者 反代IP</li>
-                <li>端口(port)：6个https端口可任意选择(443、8443、2053、2083、2087、2096)，或反代IP对应端口</li>
-                <li>用户ID(uuid)：${userID}</li>
-                <li>传输协议(network)：ws 或者 websocket</li>
-                <li>伪装域名(host)：${hostName}</li>
-                <li>路径(path)：/?ed=2560</li>
-                <li>传输安全(TLS)：开启</li>
-                <li>跳过证书验证(allowlnsecure)：false</li>
+                <li>Client address：Custom domain name or preferred domain name or preferred IP or reverse IP</li>
+                <li>port: 6个https ports can be selected arbitrarily: (443、8443、2053、2083、2087、2096)，Or reverse IP corresponding port<</li>
+                <li>UserID(uuid)：${userID}</li>
+                <li>Transport protocol(network)：ws or websocket</li>
+                <li>Disguise domain name(host)：${hostName}</li>
+                <li>Path：/?ed=2560</li>
+                <li>Transport security(TLS)：turn on</li>
+                <li>Skip certificate verification(allowlnsecure)：false</li>
 			</ul>
             <hr>
 			<hr>
 			<hr>
             <br>
             <br>
-			<h3>2：聚合通用、Clash-meta、Sing-box订阅链接如下：</h3>
+			<h3>2：Aggregate general、Clash-meta、Sing-box Subscription link is as follows：</h3>
 			<hr>
-			<p>注意：以下订阅链接仅6个TLS端口节点</p>
+			<p>Note: The following subscription link only has 6 TLS port nodes</p>
 			<hr>
 			<table class="table">
 					<thead>
 						<tr>
-							<th>聚合通用订阅链接：</th>
+							<th>Aggregate universal subscription links：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="limited-width">${pty}</td>	
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${pty}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${pty}')">Click to copy link</button></td>
 						</tr>
 					</tbody>
 				</table>	
@@ -1044,13 +1044,13 @@ ${displayHtml}
 				<table class="table">
 						<thead>
 							<tr>
-								<th>Clash-meta订阅链接：</th>
+								<th>Clash-meta Sublink：</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td class="limited-width">${pcl}</td>	
-								<td><button class="btn btn-primary" onclick="copyToClipboard('${pcl}')">点击复制链接</button></td>
+								<td><button class="btn btn-primary" onclick="copyToClipboard('${pcl}')">Click to copy link</button></td>
 							</tr>
 						</tbody>
 					</table>
@@ -1058,13 +1058,13 @@ ${displayHtml}
 					<table class="table">
 					<thead>
 						<tr>
-							<th>Sing-box订阅链接：</th>
+							<th>Sing-box Sublink：</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td class="limited-width">${psb}</td>	
-							<td><button class="btn btn-primary" onclick="copyToClipboard('${psb}')">点击复制链接</button></td>
+							<td><button class="btn btn-primary" onclick="copyToClipboard('${psb}')">Click to copy link</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -1291,7 +1291,7 @@ proxies:
       Host: ${hostName}
 
 proxy-groups:
-- name: 负载均衡
+- name: load balancing
   type: load-balance
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -1310,7 +1310,7 @@ proxy-groups:
     - CF_V12_${IP12}_${PT12}
     - CF_V13_${IP13}_${PT13}
 
-- name: 自动选择
+- name: automatic selection
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -1330,11 +1330,11 @@ proxy-groups:
     - CF_V12_${IP12}_${PT12}
     - CF_V13_${IP13}_${PT13}
 
-- name: 🌍选择代理
+- name: 🌍Choose an agent
   type: select
   proxies:
-    - 负载均衡
-    - 自动选择
+    - load balancing
+    - automatic selection
     - DIRECT
     - CF_V1_${IP1}_${PT1}
     - CF_V2_${IP2}_${PT2}
@@ -1353,7 +1353,7 @@ proxy-groups:
 rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理`
+  - MATCH,🌍Choose an agent`
 }
 	
 function getsbConfig(userID, hostName) {
@@ -1986,7 +1986,7 @@ proxy-groups:
     - CF_V12_${IP12}_${PT12}
     - CF_V13_${IP13}_${PT13}
 
-- name: 自动选择
+- name: automatic selection
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
@@ -1999,7 +1999,7 @@ proxy-groups:
     - CF_V12_${IP12}_${PT12}
     - CF_V13_${IP13}_${PT13}
 
-- name: 🌍选择代理
+- name: 🌍Choose an agent
   type: select
   proxies:
     - 负载均衡
