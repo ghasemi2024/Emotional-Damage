@@ -69,13 +69,13 @@
 
 ## اشتراک vless لینک
 
-1.  بازدید کنید`https://edtunnel.pages.dev/uuid your set`برای دریافت لینک های اشتراک کلی v2ray، Singbox و کلش.
+-   بازدید کنید`https://edtunnel.pages.dev/uuid your set`برای دریافت لینک های اشتراک کلی v2ray، Singbox و کلش.
 
--   بازدید کنید`https://edtunnel.pages.dev/uuid your set/pty`برای دریافت پیوند اشتراک جهانی کل.
+    -   بازدید کنید`https://edtunnel.pages.dev/uuid your set/pty`برای دریافت پیوند اشتراک جهانی کل.
 
--   بازدید کنید`https://edtunnel.pages.dev/uuid your set/psb`برای دریافت لینک اشتراک Hiddify/Singbox
+    -   بازدید کنید`https://edtunnel.pages.dev/uuid your set/psb`برای دریافت لینک اشتراک Hiddify/Singbox
 
--   بازدید کنید`https://edtunnel.pages.dev/uuid your set/pcl`برای دریافت لینک اشتراک Clash-Meta.
+    -   بازدید کنید`https://edtunnel.pages.dev/uuid your set/pcl`برای دریافت لینک اشتراک Clash-Meta.
 
 
 -   انجام شد. اگر سوالی دارید لطفا بپیوندید[@edtunnel](https://t.me/edtunnel)یا[@F_NiREvil](https://t.me/F_NiREvil)
@@ -114,7 +114,6 @@ let IP13 = 'www.wto.org'
 به طور پیش فرض، پورت 8080 و 8443 است. اگر می خواهید پورت ها را تغییر دهید، می توانید از پورت های زیر استفاده کنید:
 
 ```CSS
-
 let portArray_http = [
 // line 33
 let PT1 = '80'
@@ -137,7 +136,8 @@ let PT13 = '2096'
 ];
 ```
 
-> [توجه داشته باشید!]اگر در صفحات cloudflare مستقر می شوید، پورت https پشتیبانی نمی شود. به سادگی چندین پورت را اضافه کنید و از لینک اشتراک استفاده کنید، محتوای اشتراک همه پورت های پشتیبانی شده از Cloudflare را برمی گرداند.
+> [توجه داشته باشید!]اگر در صفحات cloudflare مستقر می شوید، پورت https پشتیبانی نمی شود. به سادگی چندین پورت گره را اضافه کنید و از لینک اشتراک استفاده کنید،
+> محتوای اشتراک همه پورت های پشتیبانی شده از Cloudflare را برمی گرداند.
 
 ## پروکسی IP
 
@@ -147,13 +147,15 @@ let PT13 = '2096'
     می توانید پروکسی IP را در اینجا پیدا کنید:<https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md>
 
 > [!احتیاط]`proxyIP`آی پی یا دامنه ای است که می خواهید تنظیم کنید. این بدان معنی است که پروکسی IP برای هدایت ترافیک از طریق یک پروکسی به جای مستقیم به وب سایتی که از Cloudflare (CDN) استفاده می کند استفاده می شود. اگر این متغیر را تنظیم نکنید، اتصال به IP Cloudflare لغو (یا مسدود می شود)...
-
-دلایل: سوکت های خروجی TCP به محدوده IP Cloudflare به طور موقت مسدود شده اند، لطفاً به[اسناد tcp-sockets](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
+>
+> دلایل: سوکت های خروجی TCP به محدوده IP Cloudflare به طور موقت مسدود شده اند، لطفاً به[اسناد tcp-sockets](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
-## استفاده
+### استفاده
 
-ابتدا دامنه pages.dev خود را باز کنید`https://edtunnel.pages.dev/uuid your set`در مرورگر خود، به برای دریافت پیوندهای vless/singbox و clash config.
+ابتدا، pages.dev/uuid خود را باز کنید مانند:`https://edtunnel.pages.dev/uuid your set`در مرورگر خود، برای دریافت زیر پیوندهای vless/singbox و clash.
 
-![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)اعتبارات:[استریل و نابود کنید](https://github.com/3Kmfi6HP/EDtunnel)&[zizifn](https://github.com/zizifn/edgetunnel)
+اعتبارات:[استریل و نابود کنید](https://github.com/3Kmfi6HP/EDtunnel)&[zizifn](https://github.com/zizifn/edgetunnel)
+
+![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
