@@ -71,15 +71,16 @@ Note: `UUID` is the uuid you want to set. pages.dev and worker.dev all of them m
    note: uuid1, uuid2, uuid3 are separated by commas`,`.
    when you set multiple uuid, you can use `https://edtunnel.pages.dev/uuid1` to get the clash config and vless:// link.
 
+
 ## Subscribe vless link
 
-1. visit `https://edtunnel.pages.dev/uuid your set` to get Aggregate general v2ray, Singbox and Clash Subscription links.
+- visit `https://edtunnel.pages.dev/uuid your set` to get Aggregate general v2ray, Singbox and Clash Subscription links.
 
-- Visit `https://edtunnel.pages.dev/uuid your set/pty` to get the aggregate universal subscription link.
+  - Visit `https://edtunnel.pages.dev/uuid your set/pty` to get the aggregate universal subscription link.
 
-- Visit `https://edtunnel.pages.dev/uuid your set/psb` to get Hiddify/Singbox subscription link
+  - Visit `https://edtunnel.pages.dev/uuid your set/psb` to get Hiddify/Singbox subscription link
 
-- Visit `https://edtunnel.pages.dev/uuid your set/pcl` to get the Clash-Meta subscription link.
+  - Visit `https://edtunnel.pages.dev/uuid your set/pcl` to get the Clash-Meta subscription link.
 
 
 
@@ -126,7 +127,6 @@ By default, the port is 8080 and 8443. If you want to modifying ports, you can u
 
 
 ```CSS
-
 let portArray_http = [
 // line 33
 let PT1 = '80'
@@ -150,7 +150,8 @@ let PT13 = '2096'
 ```
 
 > [!NOTE]
-> if you deploy in cloudflare pages, https port is not supported. Simply add multiple ports node drictly use subscribe link, subscribe content will return all Cloudflare supported ports.
+> if you deploy in cloudflare pages, https port is not supported. Simply add multiple ports node drictly use subscribe link,
+> subscribe content will return all Cloudflare supported ports.
 
 
 
@@ -164,16 +165,17 @@ you can find proxyIP Here: https://github.com/NiREvil/vless/blob/main/sub/ProxyI
 
 > [!CAUTION]
 >  `proxyIP` is the ip or domain you want to set. this means that the proxyIP is used to route traffic through a proxy rather than directly to a website that is using Cloudflare's (CDN). if you don't set this variable, connection to the Cloudflare IP will be cancelled (or blocked)...
-
-resons: Outbound TCP sockets to Cloudflare IP ranges are temporarily blocked, please refer to the [tcp-sockets documentation](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
+>
+> resons: Outbound TCP sockets to Cloudflare IP ranges are temporarily blocked, please refer to the [tcp-sockets documentation](https://developers.cloudflare.com/workers/runtime-apis/tcp-sockets/#considerations)
 
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
 
-## Usage
+### Usage
 
-frist, open your pages.dev domain `https://edtunnel.pages.dev/uuid your set` in your browser, to to get the vless/singbox and clash config links.
+frist, open your pages.dev/uuid like: `https://edtunnel.pages.dev/uuid your set` in your browser, to get the vless/singbox and clash sublinks.
 
-![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 Credits: [3Kmfi6HP](https://github.com/3Kmfi6HP/EDtunnel)  &  [zizifn](https://github.com/zizifn/edgetunnel)
+
+![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
