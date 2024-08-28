@@ -47,9 +47,9 @@
 
 ## UUID Setting
 
-1. When deploy in cloudflare pages, you can set uuid in `wrangler.toml` file. variable name is `UUID`. `wrangler.toml` file is also supported. (recommended) in case deploy in webpages, you can not set uuid in `wrangler.toml` file.
+1. When deploy in cloudflare pages, you can set uuid in `wrangler.toml` file. variable name is `uuid`. `wrangler.toml` file is also supported. (recommended) in case deploy in webpages, you can not set uuid in `wrangler.toml` file.
 
-2. When deploy in worker.dev, you can set uuid in the __11th line__ of `_worker.js` file. variable name is `userID`. `wrangler.toml` file is also supported. (recommended) in case deploy in webpages, you can not set uuid in `wrangler.toml` file. in this case, you can also set uuid in `UUID` enviroment variable.
+2. When deploy in worker.dev, you can set uuid in the __11th line__ of `_worker.js` file. variable name is `userID`. `wrangler.toml` file is also supported. (recommended) in case deploy in webpages, you can not set uuid in `wrangler.toml` file. in this case, you can also set uuid in `uuid` enviroment variable.
 
 Note: `UUID` is the uuid you want to set. pages.dev and worker.dev all of them method supported, but depend on your deploy method.
 
@@ -59,13 +59,13 @@ Note: `UUID` is the uuid you want to set. pages.dev and worker.dev all of them m
 1. single uuid environment variable
 
    ```.environment
-   UUID = "uuid here your want to set"
+   uuid = "uuid here your want to set"
    ```
 
 2. multiple uuid environment variable
 
    ```.environment
-   UUID = "uuid1,uuid2,uuid3"
+   uuid = "uuid1,uuid2,uuid3"
    ```
 
    note: uuid1, uuid2, uuid3 are separated by commas`,`.
