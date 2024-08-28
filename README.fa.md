@@ -21,7 +21,7 @@
 -   [uuid تنظیمات](#UUID-Setting)
     -   [مثال تنظیم uuid](#UUID-Setting-Example)
 -   [اشتراک vless لینک](#Subscribe-vless-link)
--   [cf domain or IP's](#CF_Domain_or_IP's)
+-   [دامنه یا IP های cf](#CF_Domain_or_IP's)
 -   [پشتیبانی از چند پورت](#Multiple-port-support)
 -   [پروکسی IP](#ProxyIP)
 -   [استفاده](#Usage)![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
@@ -38,15 +38,15 @@
 
 1.  کپی کنید`_worker.js`کد از[اینجا](_worker.js).
 
-2.  همچنین، می‌توانید روی دکمه زیر کلیک کنید تا مستقیماً مستقر شود.
+2.  Alternatively, you can click the button below to deploy directly.
 
     [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/NiREvil/Emotional-Damage)
 
 ## تنظیمات UUID
 
-1.  هنگام استقرار در صفحات cloudflare، می توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل نام متغیر است`uuid`.`wrangler.toml`فایل نیز پشتیبانی می شود. (توصیه می شود) در صورت استقرار در صفحات وب، نمی توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل
+1.  هنگام استقرار در صفحات cloudflare، می توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل نام متغیر است`uuid`. `wrangler.toml`فایل نیز پشتیبانی می شود. (توصیه می شود) در صورت استقرار در صفحات وب، نمی توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل
 
-2.  هنگام استقرار در worker.dev، می توانید uuid را در آن تنظیم کنید**خط یازدهم**از`_worker.js`فایل نام متغیر است`userID`.`wrangler.toml`فایل نیز پشتیبانی می شود. (توصیه می شود) در صورت استقرار در صفحات وب، نمی توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل در این حالت می توانید uuid را نیز تنظیم کنید`uuid`متغیر محیطی
+2.  هنگام استقرار در worker.dev، می توانید uuid را در آن تنظیم کنید**خط یازدهم**از`_worker.js`فایل نام متغیر است`userID`. `wrangler.toml`فایل نیز پشتیبانی می شود. (توصیه می شود) در صورت استقرار در صفحات وب، نمی توانید uuid را در آن تنظیم کنید`wrangler.toml`فایل در این حالت می توانید uuid را نیز تنظیم کنید`uuid`متغیر محیطی
 
 توجه:`UUID`uuid است که می خواهید تنظیم کنید. روش pages.dev و worker.dev همه آنها پشتیبانی می شود، اما به روش استقرار شما بستگی دارد.
 
@@ -71,7 +71,7 @@
 
 -   بازدید کنید`https://edtunnel.pages.dev/uuid your set`برای دریافت لینک های اشتراک کلی v2ray، Singbox و کلش.
 
-    -   بازدید کنید`https://edtunnel.pages.dev/uuid your set/pty`برای دریافت پیوند اشتراک جهانی مجموع.
+    -   بازدید کنید`https://edtunnel.pages.dev/uuid your set/pty`برای دریافت پیوند اشتراک جهانی کل.
 
     -   بازدید کنید`https://edtunnel.pages.dev/uuid your set/psb`برای دریافت لینک اشتراک Hiddify/Singbox
 
@@ -109,7 +109,7 @@ let IP13 = 'www.wto.org'
 
 ## پشتیبانی از چند پورت
 
-برای مشاهده لیست پورت های پشتیبانی شده از Cloudflare، لطفاً به آدرس زیر مراجعه کنید[اسناد رسمی](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/ports).
+برای لیستی از پورت های پشتیبانی شده از Cloudflare، لطفاً به آدرس زیر مراجعه کنید[اسناد رسمی](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/ports).
 
 به طور پیش فرض، پورت 8080 و 8443 است. اگر می خواهید پورت ها را تغییر دهید، می توانید از پورت های زیر استفاده کنید:
 
@@ -136,12 +136,12 @@ let PT13 = '2096'
 ];
 ```
 
-> [!نکته]اگر در صفحات cloudflare مستقر می شوید، پورت https پشتیبانی نمی شود. به سادگی چندین پورت گره را اضافه کنید و از لینک اشتراک استفاده کنید،
+> [توجه داشته باشید!]اگر در صفحات cloudflare مستقر می شوید، پورت https پشتیبانی نمی شود. به سادگی چندین پورت گره را اضافه کنید و از لینک اشتراک استفاده کنید،
 > محتوای اشتراک همه پورت های پشتیبانی شده از Cloudflare را برمی گرداند.
 
 ## پروکسی IP
 
-1.  هنگام استقرار در صفحات cloudflare، می توانید پروکسی IP را در آن تنظیم کنید`wrangler.toml`فایل یا تنظیم کنید`_worker.js`فایل در**خط 13**.  یا توصیه می کنم متغیر محیطی را با نام تنظیم کنید`PROXYIP`در حساب صفحه/cloudflare شما.
+1.  هنگام استقرار در صفحات cloudflare، می توانید پروکسی IP را در آن تنظیم کنید`wrangler.toml`فایل یا تنظیم کنید`_worker.js`فایل در**خط 13**.  یا من توصیه کردم متغیر محیطی را با نام تنظیم کنید`proxyip`در حساب صفحه/cloudflare شما.
 
 2.  هنگام استقرار در worker.dev، می توانید پروکسی IP را در آن تنظیم کنید`_worker.js`فایل نام متغیر است`proxyIP`.
     می توانید پروکسی IP را در اینجا پیدا کنید:<https://github.com/NiREvil/vless/blob/main/sub/ProxyIP.md>
@@ -154,8 +154,8 @@ let PT13 = '2096'
 
 ### استفاده
 
-اول، pages.dev/uuid خود را باز کنید مانند:`https://edtunnel.pages.dev/uuid your set`در مرورگر خود، برای دریافت زیر پیوندهای vless/singbox و clash.
+ابتدا، pages.dev/uuid خود را باز کنید مانند:`https://edtunnel.pages.dev/uuid your set`در مرورگر خود، برای دریافت زیر پیوندهای vless/singbox و clash.
 
-اعتبارات:[استریل و نابود کنید](https://github.com/3Kmfi6HP/EDtunnel)&[zizifn](https://github.com/zizifn/edgetunnel)
+اعتبارات:[آن را استریل کنید](https://github.com/3Kmfi6HP/EDtunnel)&[zizifn](https://github.com/zizifn/edgetunnel)
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
