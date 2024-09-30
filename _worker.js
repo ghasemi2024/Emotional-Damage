@@ -10,7 +10,7 @@ import { connect } from "cloudflare:sockets";
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = "264f2839-f838-4ba9-b71f-69e0b7e966c0";
 
-const proxyIPs = ["pip.nscl.ir"]; // OR use ['ni.radically.pro', 'de.radically.pro', 'bpb.yousef.isegaro.com', 'proxyip.digitalocean.hw.090227.xyz'];
+const proxyIPs = ["138.3.254.39"]; // OR use ['pip.nscl.ir','ni.radically.pro', 'de.radically.pro', 'bpb.yousef.isegaro.com', 'proxyip.digitalocean.hw.090227.xyz'];
 const cn_hostnames = [''];
 let CDNIP = 'www.speedtest.net'
 // http_ip
